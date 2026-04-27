@@ -1098,15 +1098,18 @@ footer{border-top:1px solid var(--rule);background:var(--bg2);padding:24px 0}
 │   ├── DriverType.java             # CHROME / FIREFOX / EDGE
 │   └── EnvironmentType.java        # LOCAL / REMOTE
 └── pageObjects/
-    └── LoginPage.java              # By 변수 방식 POM
+    ├── LoginPage.java              # By 변수 방식 POM
+    └── SearchPage.java             # 검색 페이지 POM
 
 src/test/
 ├── java/stepDefinitions/
 │   ├── Hooks.java                  # Before / After
 │   ├── LoginSteps.java             # 로그인 Step 구현
+│   ├── SearchSteps.java            # 검색 Step 구현
 │   └── NetworkInterceptSteps.java  # CDP Step 구현
 └── resources/Features/
     ├── login.feature
+    ├── search.feature
     └── networkIntercept.feature</pre>
           </div>
         </div>
